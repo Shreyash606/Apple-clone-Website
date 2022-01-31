@@ -1,0 +1,393 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: SFPRODISPLAYREGULAR;
+  src: url(assets/fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+html {
+  font-family: SFPRODISPLAYREGULAR;
+  font-size: 12px;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 22px;
+  position: relative;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  display: block;
+  top: 0;
+  z-index: 1400;
+  height: 48px;
+
+  width: 100%;
+
+  background-color: #333333;
+  backdrop-filter: blur(3rem);
+}
+
+.nav-list {
+  list-style: none;
+  max-width: 980px;
+  display: flex;
+  height: 44px;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 4px;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1em;
+  color: #cbcbcb;
+  padding: 0 1rem;
+  transition: opacity 0.7s;
+}
+
+.nav-link:hover {
+  opacity: 0.5;
+}
+
+.nav-link-apple {
+  width: 25px;
+  height: 25px;
+  background: center no-repeat;
+}
+
+.nav-link-search {
+  width: 25px;
+  height: 25px;
+  background: center no-repeat;
+}
+
+.nav-link-bag {
+  width: 25px;
+  height: 25px;
+  background: center no-repeat;
+}
+
+/* iphone 13 pro */
+
+.iphone13-pro {
+  background: url("assets/13\ pro.jpg");
+  margin-top: 4.4rem;
+  background-color: #fbfbfb;
+}
+
+.title {
+  color: #000;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.title-heading {
+  font-size: 56px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.005rem;
+}
+
+.title-sub-heading {
+  font-size: 28px;
+  margin-top: 6px;
+  letter-spacing: 0.004rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.cta-link {
+  color: #06c;
+  font-size: 2.1rem;
+  display: inline;
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+  border-bottom: 2px solid #06c;
+}
+
+/* iPhone 13 */
+
+.iphone13 {
+  background: url("assets/13.jpg");
+  background-repeat: no-repeat;
+  background-color: #35283c;
+}
+
+.title-light {
+  color: #fff;
+}
+
+.title-color {
+  color: #f2b8e0;
+}
+
+.Macbook-pro {
+  background: url("assets/MAC.jpg") center no-repeat;
+  background-color: #fbfbfb;
+}
+
+/* ALL SECTION STYLES */
+.hero {
+  width: auto;
+  height: 736px;
+  background-size: auto 736px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid #fff;
+  border-bottom: 0.6rem solid #fff;
+}
+
+.iphone13-pro {
+  border-top: none;
+}
+
+/* END */
+/* watch */
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  margin: 0 5px;
+  height: 736px;
+}
+
+.new{
+  text-align: center;
+  padding: 3px;
+}
+
+.watch-text{
+  background: url(assets/watchtext.png) center no-repeat;
+}
+
+.sub-heading{
+  font-size: 25px;
+  font-weight: 400;
+}
+.Watch {
+  background: url(assets/WATCH.jpg) center no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+
+/* End */
+/* Mobile */
+
+@media screen and (max-width: 734px) {
+  .iphone13-pro {
+    background-image: url(assets/13ProL.jpg);
+  }
+
+  .iphone13 {
+    background-image: url(assets/13M.jpg);
+  }
+
+  .Macbook-pro {
+    background-image: url(assets/macS.jpg);
+  }
+  .hero {
+    height: 500px;
+    background-size: auto 500px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+
+  .title-heading {
+    font-size: 32px;
+    line-height: 1.125;
+    font-weight: 600;
+    letter-spacing: 0.004em;
+  }
+
+  .title-sub-heading {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+  }
+
+  .cta-link {
+    font-size: 17px;
+    line-height: 1.23536;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+  }
+
+  .cta-link:nth-child(2) {
+    margin-left: 2rem;
+  }
+
+  .title-light {
+    padding-top: 220px;
+  }
+}
+
+@media screen and (max-width: 734px), (min-width: auto) {
+  header {
+    height: 48px;
+    transition: background 0.36s cubic-bezier(0.32, 0.08, 0.24, 1),
+      height 0.56s cubic-bezier(0.32, 0.08, 0.24.1);
+  }
+
+  header.container {
+    padding: none;
+  }
+
+  .iphone13-pro {
+    margin-top: 4.8rem;
+  }
+
+  .nav-list-larger {
+    display: none;
+  }
+
+  .nav-list {
+    margin-top: 0;
+  }
+
+  .nav-list-mobile {
+    display: flex;
+  }
+
+  .nav-item {
+    display: flex;
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+  }
+
+  .nav-link-apple {
+    padding-top: 6px;
+  }
+
+  .nav-link-bag {
+    padding-top: 6px;
+    margin: 0 10px;
+  }
+
+  .nav-item-hidden {
+    display: none;
+  }
+
+  .mobile-menu {
+    position: relative;
+    z-index: 1500;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .line {
+    position: absolute;
+    width: 1.2rem;
+    height: 1px;
+    background-color: #cbcbcb;
+    transition: margin-top 0.3192s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .line-top {
+    margin-top: 5px;
+  }
+
+  .line-bottom {
+    margin-top: -0.5rem;
+  }
+
+  .active .line-top {
+    margin-top: 0;
+    transform: rotate(45deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .active .line-bottom {
+    margin-top: 0;
+    transform: rotate(135deg);
+    transition: transform 0.3192s 0.1s cubic-bezier(0.04, 0.04, 0.12, 0.96);
+  }
+
+  .active header {
+    height: 100%;
+    background-color: #000;
+  }
+}
